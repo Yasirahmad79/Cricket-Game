@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bat🏏Ball🌏 Stump 🏆Game</h1>
+        <h4>please choose the image given below to start the game</h4>
+        <button class="btn" onclick="clickOnBat()"><img class="img-btn" src="./images/bat.png" alt="Bat img"></button>
+        <button class="btn" onclick="clickOnBall()"><img class="img-btn" src="./images/ball.png" alt="Bat img"></button>
+        <button class="btn" onclick="clickOnStump()"><img class="img-btn" src="./images/stump.png" alt="Bat img"></button>
+
+        <div id="box">
+        <h3 id="user-choice"></h3>
+        <h3 id="computer-choice"></h3>
+        <h3 id="result-m"></h3>
+        <h3 id="display-score"></h3>
+    </div>
+        <button onclick="localStorage.clear();
+        resetScore(); 
+        alert('Please refresh your page for new Game: ');">Reset</button>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
